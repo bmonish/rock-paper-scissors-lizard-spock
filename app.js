@@ -14,8 +14,36 @@ function getPcChoice(){
   return choices[randomNum];
 }
 
+function win(){
+
+}
+
+function lose(){
+
+}
+
+function draw(){
+
+}
 function game(userChoice){
   const computerChoice = getPcChoice();
+  switch (userChoice + computerChoice){
+    case "rs":
+    case "sp":
+    case "pr":
+      win();
+      break;
+    case "rp":
+    case "ps":
+    case "sr":
+      lose();
+      break;
+    case "rr":
+    case "pp":
+    case "ss":
+      draw();
+      break;
+  }
 }
 function main(){
   rock_div.addEventListener('click', function(){
