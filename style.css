@@ -10,7 +10,6 @@ body{
 }
 header{
   background: white;
-  padding: 20px;
 }
 
 header > h1{
@@ -35,7 +34,7 @@ header > h1{
   border: 3px solid white;
   width: 200px;
   text-align: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-family: Asap, sans-serif;;
   border-radius: 4px;
   margin: 20px auto;
@@ -54,13 +53,13 @@ header > h1{
 
 #user-label{
   position: absolute;
-  top: 30px;
+  top: 27px;
   left: -25px;
 }
 
 #computer-label{
   position: absolute;
-  top: 30px;
+  top: 27px;
   right: -30px;
 }
 
