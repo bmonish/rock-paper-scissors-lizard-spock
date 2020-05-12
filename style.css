@@ -10,6 +10,7 @@ body{
 }
 header{
   background: white;
+  margin-top: -35px;
 }
 
 header > h1{
