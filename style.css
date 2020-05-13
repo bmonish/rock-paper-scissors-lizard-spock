@@ -6,21 +6,27 @@
 }
 
 body{
-  background-color: #f7baba;
+  background-color: #ffe8e8;
 }
 header{
   background: #571d1d;
-  margin-top: -30px;
+  margin-top: -35px;
 }
 
 header > h1{
-  color: #f7baba;
+  color: #ffe8e8;
   text-align: center;
   font-size: 50px;
   padding-bottom: 10px;
   font-family: Asap, sans-serif;
 }
-
+#ruleh{
+  padding-top: 25px;
+  color: #ffe8e8;
+  text-align: center;
+  font-size: 50px;
+  font-family: Asap, sans-serif;
+}
 #rules{
   padding-left: 20px;
   color: #571d1d;
