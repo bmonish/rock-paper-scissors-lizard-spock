@@ -115,6 +115,18 @@ header > h1{
   background-color: #571d1d;
   height: 5px;
 }
+
+.startbox{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#mstart{
+  margin-top: 50px;
+}
+#mrules{
+  margin-top: 50px;
+}
 .green-glow{
   border: 4px solid #4dcc7d;
   box-shadow: 0 0 10px #31b43a;
