@@ -2,13 +2,14 @@ let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
+const scoreBoard = document.getElementById("scoreb")
 const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
 const lizard_div = document.getElementById("l");
 const spock_div = document.getElementById("o");
-
+document.getElementById("reset-game").style.display="none";
 function getPcChoice(){
   const choices = ['r','p','s','l','o'];
   const randomChoice = Math.floor(Math.random()*5);
@@ -50,13 +51,7 @@ function draw(user, comp){
   setTimeout(() => userChoice_div.classList.remove('grey-glow'), 300);
 }
 function game(userChoice){
-  if(userScore==21){
-    result_p.innerHTML = `Congrats You won!`;
-  }
-  else if(computerScore==21){
-    result_p.innerHTML = `Better luck Next Time!`;
-  }
-  else{
+  if(userScore!=21 && computerScore!=21){
   const compChoice = getPcChoice();
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
@@ -150,6 +145,18 @@ function game(userChoice){
       break;
   }
 }
+  if(userScore==21){
+    scoreBoard.classList.add('green-glow');
+    setTimeout(() => scoreBoard.classList.remove('green-glow'), 600);
+    result_p.innerHTML = `You won! Congrats!!!`;
+    document.getElementById("reset-game").style.display="block";
+  }
+  else if(computerScore==21){
+    scoreBoard.classList.add('red-glow');
+    setTimeout(() => scoreBoard.classList.remove('red-glow'), 600);
+    result_p.innerHTML = `You Lost! Better luck Next Time!`;
+    document.getElementById("reset-game").style.display="block";
+  }
 }
 
 function main(){
