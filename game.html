@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors Lizard Spock</h1>
+    </header>
+    <div class="score-board" id="scoreb">
+      <div id="user-label" class="badge">user</div>
+      <div id="computer-label"class="badge">comp</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+<div class="result">
+  <p>The First to score 21 points wins! </p>
+</div>
+<div id="reset-game">
+  <a href="game.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="336" height="70" viewBox="0 0 336 70">
+      <path fill="rgb(87,29,29)" fill-rule="evenodd" d="M25 0h286c13.79787561 0 25 11.20212439 25 25v20c0 13.79787561-11.20212439 25-25 25H25C11.20212439 70 0 58.79787561 0 45V25C0 11.20212439 11.20212439 0 25 0z"/>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="45" y="53" fill="rgb(255,232,232)" font-family="Asap Medium" font-size="50" font-weight="500" style="white-space:pre;text-transform:none" font-style="italic">Play Again</tspan>
+      </text>
+    </svg>
+  </a>
+</div>
+<div class="choices">
+  <div id ="r" class="choice">
+    <img src="images/rock.png" alt="" height="90px" width="90px">
+  </div>
+  <div id="p" class="choice">
+    <img src="images/paper.png" alt="" height="90px" width="90px">
+  </div>
+  <div id="s" class="choice">
+    <img src="images/scissors.png" alt="" height="90px" width="90px" >
+  </div>
+  <br/>
+  <br/>
+  <div id="l" class="choice">
+    <img src="images/lizard.png" alt="" height="90px" width="90px" >
+  </div>
+  <div id="o" class="choice">
+    <img src="images/spock.png" alt="" height="90px" width="90px" >
+  </div>
+</div>
+
+<p id="action-message">May the force be with you! Make your move.</p>
+<br/>
+<hr id="line"/>
+  <script src="app.js" charset="utf-8">
+  </script>
+  </body>
+</html>
