@@ -50,6 +50,13 @@ function draw(user, comp){
   setTimeout(() => userChoice_div.classList.remove('grey-glow'), 300);
 }
 function game(userChoice){
+  if(userScore==21){
+    result_p.innerHTML = `Congrats You won!`;
+  }
+  else if(computerScore==21){
+    result_p.innerHTML = `Better luck Next Time!`;
+  }
+  else{
   const compChoice = getPcChoice();
   const smallUserWord = "user".fontsize(3).sub();
   const smallCompWord = "comp".fontsize(3).sub();
@@ -142,6 +149,7 @@ function game(userChoice){
       draw(userChoice, compChoice);
       break;
   }
+}
 }
 
 function main(){
